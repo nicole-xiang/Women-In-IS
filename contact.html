@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/women in IS logo1.png" type="image/icon type" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+
+    <title>Women In IS</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <!-- Logo Image -->
+          <img
+            src="img/women in IS logo1.png"
+            width="15%"
+            alt="women in is logo"
+            class="d-inline-block align-middle nav_logo"
+          />
+          <!-- Logo Text -->
+          <span class="navTitle">Women In IS</span> <br />
+          <span class="navSub">Carnegie Mellon University</span>
+        </a>
+        <!-- mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- nav menu -->
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="events.html" class="nav-link">Events</a>
+            </li>
+            <li class="nav-item">
+              <a href="joinUs.html" class="nav-link">Join</a>
+            </li>
+            <li class="nav-item">
+              <a href="meetUs.html" class="nav-link">Meet Us</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#" class="nav-link currPage">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container main">
+      <div class="row d-flex">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <img
+            class="img-fluid contact_img"
+            src="img/contact.png"
+            width="90%"
+          />
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <h1>Contact Us</h1>
+          <p>Send a message to our advisors Correy and Brandy!</p>
+          <form name="contact_form" onsubmit="return validateForm()">
+            <div class="mb-3">
+              <label for="inputName" class="form-label">Full Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                name="fn_ln"
+                placeholder="First Last"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                name="email"
+                placeholder="xx@andrew.cmu.edu"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="inputText" class="form-label">Message</label>
+              <textarea
+                class="form-control message_area"
+                id="inputText"
+                name="message"
+                aria-label="With textarea"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-2">
+      <div class="row" id="footerContent">
+        <!-- footer logo -->
+        <div class="col-2">
+          <a href="index.html">
+            <img
+              src="img/women in IS logo1.png"
+              width="90%"
+              alt="women in is logo"
+              class="d-inline-block align-middle"
+            />
+          </a>
+        </div>
+        <div class="col-1"></div>
+        <!-- page nav menu -->
+        <div class="col-3">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 pb-2">
+              <a href="index.html" class="nav-link p-0">Home</a>
+            </li>
+            <li class="nav-item mb-2 pb-2">
+              <a href="events.html" class="nav-link p-0">Events</a>
+            </li>
+            <li class="nav-item mb-2 pb-2">
+              <a href="joinUs.html" class="nav-link p-0">Join</a>
+            </li>
+            <li class="nav-item mb-2 pb-2">
+              <a href="meetUs.html" class="nav-link p-0">Meet Us</a>
+            </li>
+            <li class="nav-item mb-2 pb-2">
+              <a href="#" class="nav-link p-0">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- address -->
+        <div class="col-3 address">
+          <h5>Information Systems</h5>
+          <a href="https://goo.gl/maps/vztjvExTPMWMiwR79" target="_blank"
+            ><p class="adress_d">
+              4800 Forbes Ave, HBH 3031 <br />
+              Pittsburgh, PA 15213
+            </p></a
+          >
+          <!-- contact icons -->
+          <ul class="list-unstyled d-flex">
+            <li>
+              <a href="https://goo.gl/maps/1JrfYtKWctKS8QW37" target="_blank"
+                ><img
+                  class="thumbnail contact_icons"
+                  id="map_icon"
+                  src="img/maplogo.png"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+            <li id="mail_icon">
+              <a href="mailto: isinfo@andrew.cmu.edu" target="_blank"
+                ><img
+                  class="thumbnail contact_icons"
+                  src="img/emailLogo.png"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+            <li class="ms-3">
+              <a href="tel:4122683259"
+                ><img
+                  class="thumbnail contact_icons"
+                  src="img/phoneLogo.png"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+            <li class="ms-3">
+              <a href="https://www.instagram.com/cmu_is/" target="_blank"
+                ><img
+                  class="thumbnail contact_icons"
+                  src="img/igLogo.png"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <!-- resources -->
+        <div class="col-3 resources">
+          <h5>Resources</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a
+                href="pdfs/MenteeResource.pdf"
+                target="_blank"
+                class="nav-link p-0"
+                >Mentee Guidebook</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="pdfs/MentorResource.pdf"
+                target="_blank"
+                class="nav-link p-0"
+                >Mentor Guidebook</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

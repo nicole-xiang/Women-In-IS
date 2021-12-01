@@ -1,0 +1,541 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=IBM+Plex+Sans&family=Work+Sans&display=swap");
+body {
+  margin: 0%;
+  padding: 0%;
+}
+h1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 50px;
+  color: #077c99;
+  text-align: center;
+}
+h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 200%;
+  color: white;
+  text-align: center;
+}
+h4 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 100%;
+  color: white;
+  text-align: center;
+}
+p {
+  font-family: "Work Sans", sans-serif;
+  color: #474747;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #077c99;
+}
+img {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.impact-img {
+  max-width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* 
+.cover {
+  margin-top: 5%;
+} */
+.cover_img {
+  filter: grayscale(10%) opacity(90%);
+}
+.cover_title {
+  font-size: 300%;
+  color: #19e0ed;
+  font-weight: bolder;
+}
+.cover_text {
+  font-family: "Bodoni Moda", serif;
+}
+.navbar {
+  background-color: #023343;
+}
+
+/* women in is */
+.navTitle {
+  font-style: italic;
+  font-size: 125%;
+  color: #19e0ed;
+  font-weight: bolder;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+/* CMU */
+.navSub {
+  color: white;
+  font-family: "Bodoni Moda", serif;
+  font-size: 15px;
+}
+/* navBar text color */
+.navbar-nav.ms-auto.nav li a {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #31c4e8;
+  font-size: 1.05em;
+  padding-left: 1.5em;
+}
+.navbar-nav.ms-auto.nav li .currPage {
+  color: white;
+}
+
+.block {
+  width: 100%;
+  position: relative;
+  margin: 0%;
+  padding: 0%;
+}
+
+.btn {
+  font-family: "Work Sans", sans-serif;
+  border-color: #077c99;
+  color: #077c99;
+}
+.front {
+  position: relative;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+.carousel-header {
+  color: #077c99;
+}
+
+.col {
+  margin: 0px;
+  padding: 0px;
+}
+
+.card-text {
+  padding: 2%;
+  margin: 4%;
+}
+
+.icon {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  position: center;
+}
+.p_detail {
+  border-top: 1px solid #ada8a8;
+  background-color: #077c99;
+  width: 100%;
+}
+.p_detail row {
+  background-color: #077c99;
+}
+.p_detail_card {
+  margin: 2.5% 0;
+  border: none;
+  background-color: #077c99;
+}
+.c1 {
+  border-right: 1px solid #ada8a8;
+  border-left: 1px solid #ada8a8;
+}
+.p_detail_title {
+  color: white;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.p_detail_img {
+  width: 20%;
+  min-width: 70px;
+}
+.event-img {
+  filter: grayscale(30%) opacity(90%);
+}
+
+/* Events on homepage */
+.carousel-description {
+  text-align: left;
+}
+.event-name {
+  width: 100%;
+  font-weight: bolder;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: white;
+  text-align: left;
+  top: 45%;
+  margin: 5%;
+  position: absolute;
+}
+.event-description {
+  width: 50%;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  text-align: left;
+  top: 55%;
+  margin: 5%;
+  position: absolute;
+}
+
+.event-time-place {
+  width: 50%;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  font-style: italic;
+  text-align: left;
+  top: 78%;
+  margin: 5%;
+  position: absolute;
+}
+.mobile {
+  display: none;
+}
+/* contact */
+.main {
+  margin: 5% auto;
+}
+
+.main h1 {
+  text-align: left;
+  font-weight: bold;
+}
+.btn {
+  color: #0fb4dd;
+  border-color: #0fb4dd;
+}
+.form-label {
+  color: #0fb4dd;
+}
+.form-control {
+  border-color: #0fb4dd;
+}
+.placeholder {
+  color: #7c7a7a;
+}
+.message_area {
+  height: 13.3em;
+  width: 100%;
+}
+
+form {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+/* join us */
+.join_section h1 {
+  text-align: left;
+}
+
+.card {
+  border-top: none;
+  border-radius: 0;
+}
+.card-img {
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(86, 86, 86, 0)),
+    to(rgba(7, 38, 67, 1))
+  );
+}
+.card-img-overlay {
+  margin-top: 2%;
+}
+.join_cover_title {
+  margin-left: 2%;
+  top: 100%;
+  transform: translateY(500%);
+}
+.join_cover_text {
+  font-family: "Work Sans", sans-serif;
+  color: #474747;
+}
+.join_descrip {
+  margin-bottom: 1%;
+}
+.join_descrip h3 {
+  color: #023343;
+}
+.join_descrip h5 {
+  color: #077c99;
+}
+.join_descrip li {
+  color: #474747;
+}
+.main_join {
+  margin: 2% auto;
+}
+.descript {
+  float: left;
+  overflow: hidden;
+}
+.reason {
+  font-family: "Work Sans", sans-serif;
+  color: #474747;
+}
+.apply {
+  color: #077c99;
+}
+.applyb {
+  border-color: #077c99;
+}
+
+/* meet us */
+.mentor_card {
+  display: inline-block;
+  width: 17rem;
+}
+.advisor_card {
+  display: inline-block;
+  width: 17rem;
+}
+
+#search_input1 {
+  margin-left: 7%;
+}
+#search_input2 {
+  margin-left: 7%;
+}
+.mentor_email {
+  color: #474747;
+}
+.collapse_m {
+  color: #474747;
+  border: none;
+  margin: 2% 46%;
+}
+/* footer */
+footer {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: #023343;
+  color: white;
+}
+
+#footerContent {
+  margin: 5%;
+  margin-left: 10%;
+}
+#footer_img {
+  margin-left: 0px;
+}
+.nav-link {
+  color: rgba(238, 234, 234, 0.938);
+}
+.address p {
+  color: rgba(238, 234, 234, 0.938);
+}
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+}
+/* not global */
+#fieldTrip {
+  text-align: left;
+  color: #0fb4dd;
+}
+
+#bottom {
+  margin-bottom: 5%;
+}
+
+#map_icon {
+  display: none;
+}
+/* Media Queries */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 1.9em;
+  }
+  h2 {
+    font-size: 1.7em;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+  h4 {
+    font-size: 1.1em;
+  }
+  h5 {
+    font-size: 1em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+  .c1 {
+    padding: 40px;
+    border: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  .cover_title {
+    font-size: 200%;
+    color: #0fb4dd;
+  }
+  .event-name {
+    width: 100%;
+    top: 40%;
+  }
+  .event-description {
+    width: 90%;
+    top: 53%;
+  }
+  .main h1 {
+    margin: 2% 0;
+  }
+  .event-time-place {
+    width: 70%;
+    top: 78%;
+  }
+  .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .icon {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 100px; */
+    position: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.4em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+  h4 {
+    font-size: 1.1em;
+    color: white;
+  }
+  h5 {
+    font-size: 0.9em;
+  }
+  p {
+    font-size: 0.8em;
+  }
+  .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .join_cover_title {
+    width: 100%;
+    text-align: left;
+    top: 100%;
+    transform: translateY(100%);
+  }
+  .cover_title {
+    color: #0fb4dd;
+    font-size: 1.6em;
+  }
+  .cover_text {
+    font-size: 1em;
+  }
+  .carousel-description {
+    text-align: center;
+  }
+  .p_detail_card {
+    border: none;
+  }
+  .c1 {
+    padding-top: 10px;
+    border: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  .cli {
+    font-size: 0.8em;
+    font-family: "Work Sans", sans-serif;
+  }
+  .event-name {
+    width: 100%;
+    font-weight: bolder;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: white;
+    text-align: center;
+    top: 0%;
+    position: absolute;
+  }
+  .event-description {
+    width: 100%;
+    font-family: "Work Sans", sans-serif;
+    color: white;
+    text-align: center;
+    top: 20%;
+    margin: 5%;
+    position: absolute;
+  }
+
+  .event-time-place {
+    width: 50%;
+    font-family: "Work Sans", sans-serif;
+    color: white;
+    font-style: italic;
+    text-align: left;
+    top: 78%;
+    margin: 5%;
+    position: absolute;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .non-mobile {
+    display: none;
+  }
+  .mobile {
+    display: unset;
+  }
+
+  .resources {
+    display: none;
+  }
+  .contact_icons {
+    min-width: 24px;
+    height: auto;
+  }
+  .contact_img {
+    display: none;
+  }
+  .adress_d {
+    display: none;
+  }
+  #map_icon {
+    display: inline-block;
+  }
+  #mail_icon {
+    margin-left: 15px;
+  }
+  .mentor_card {
+    width: 30%;
+    margin: 0px;
+  }
+  .mentor_email {
+    font-size: 50%;
+  }
+  .bio_bt {
+    font-size: 10px;
+  }
+  .icon {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 50px; */
+    position: center;
+  }
+}

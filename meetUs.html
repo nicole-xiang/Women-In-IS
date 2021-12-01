@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/women in IS logo1.png" type="image/icon type" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+
+    <title>Women In IS</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <!-- Logo Image -->
+            <img
+              src="img/women in IS logo1.png"
+              width="15%"
+              alt="women in is logo"
+              class="d-inline-block align-middle nav_logo"
+            />
+            <!-- Logo Text -->
+            <span class="navTitle">Women In IS</span> <br />
+            <span class="navSub">Carnegie Mellon University</span>
+          </a>
+          <!-- mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- nav menu -->
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="events.html" class="nav-link">Events</a>
+              </li>
+              <li class="nav-item">
+                <a href="joinUs.html" class="nav-link">Join</a>
+              </li>
+              <li class="nav-item">
+                <a href="meetUs.html" class="nav-link currPage">Meet Us</a>
+              </li>
+              <li class="nav-item active">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container border-0 p-2"> 
+        <div class="row g-0 border-0 m-2">
+          <div class="col-md-6 col-sm-12">
+            <div class="card-body text-center">
+              <h1 class="card-title">Meet Us</h3>
+              <p class="card-text">We encourage positive mentoring relationships through activities and guidance from the IS academic advisors and mentors.</p>              
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img src="img/meetus.png" class="img-fluid" alt="...">
+          </div>
+        </div>
+      </div>
+
+    <ul class="nav nav-tabs m-3 nav-justified" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="mentor-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#mentor"
+          type="button"
+          role="tab"
+          aria-controls="mentor"
+          aria-selected="true"
+        >
+          Mentors
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="advisor-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#advisor"
+          type="button"
+          role="tab"
+          aria-controls="advisor"
+          aria-selected="false"
+        >
+          Advisors
+        </button>
+      </li>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <!-- mentor tab -->
+      <div
+        class="tab-pane fade show active"
+        id="mentor"
+        role="tabpanel"
+        aria-labelledby="mentor-tab">
+      <input type="text" id="search_input1" onkeyup="filter('search_input1','mentor_card','mentor_name')" placeholder=" Search for mentors">
+      
+      <!-- gallery -->
+      <div class="container"> 
+      
+        <div class="card m-4 mentor_card">
+          <img src="img/p1.jpeg" class="card-img-top" alt="mentor_img">
+          <div class="card-body">
+            <h5 class="card-title mentor_name">Allison Cao</h5>
+            <a href="mailto:axcao@andrew.cmu.edu"  class="card-text m-0 p-0 mentor_email">axcao@andrew.cmu.edu</a><br>
+
+          <!-- bio window -->
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-white mt-2 bio_bt" data-bs-toggle="modal" data-bs-target="#model1">
+            Read More
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="model1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalLabel1">Allison Cao</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row d-flex">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                          <img
+                            class="img-fluid"
+                            src="img/p1.jpeg"/>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                          <p>Hi, my name's Allison! I transferred into IS at the beginning of my sophomore year, and now I'm trying to do a minor in Machine Learning. In my free time I like watching cat videos, or Inkmaster! Excited to meet all of you :)</p>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- end -->
+          </div>
+        </div>
+      
+        <div class="card m-4 mentor_card">
+            <img src="img/p2.jpeg" class="card-img-top" alt="mentor_img">
+            <div class="card-body">
+              <h5 class="card-title mentor_name">Anita Cheng</h5>
+              <a href="mailto:anitache@andrew.cmu.edu" class="card-text m-0 p-0 mentor_email">anitache@andrew.cmu.edu</a><br>
+          <!-- bio popup window -->
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-white mt-2 bio_bt" data-bs-toggle="modal" data-bs-target="#model2">
+              Read More
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="model2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel2">Anita Cheng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="row d-flex">
+                          <div class="col-lg-6 col-md-12 col-sm-12">
+                            <img
+                              class="img-fluid"
+                              src="img/p2.jpeg"/>
+                          </div>
+                          <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p>Hi hi! I'm a rising sophomore and originally from Chino Hills, California. I'm also pursuing minors in Business Analytics and Optimization, Computer Science, and Human Computer Interaction. On campus, I'm involved in the professional fraternity Alpha Kappa Psi and Smart Woman Securities. In my free time I like gaming, watching different Netflix shows, kdramas, and animes, and discovering new music. This summer I will be working as a full-time intern at venture capital JUMP Investors!</p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- end -->
+            </div>
+        </div>
+
+        <div class="card m-4 mentor_card">
+            <img src="img/p3.jpeg" class="card-img-top" alt="mentor_img">
+            <div class="card-body">
+              <h5 class="card-title mentor_name">Sabrina Chua</h5>
+              <a href="mailto:sdchua@andrew.cmu.edu" class="card-text m-0 p-0 mentor_email">sdchua@andrew.cmu.edu</a><br>
+          <!-- bio popup window -->
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-white mt-2 bio_bt" data-bs-toggle="modal" data-bs-target="#model3">
+              Read More
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="model3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel3">Sabrina Chua</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="row d-flex">
+                          <div class="col-lg-6 col-md-12 col-sm-12">
+                            <img
+                              class="img-fluid"
+                              src="img/p3.jpeg"/>
+                          </div>
+                          <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p>Hi, my name is Sabrina! I'm currently a rising senior and I transferred into IS at the start of my junior year from MechE. I'm also pursuing an additional minor in Human Computer Interaction. In my free time I love baking, crafting, hiking, and binge-watching Netflix, and I'm excited to get to know you all!</p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- end -->            
+          </div>
+        </div>
+
+        <div class="card m-4 mentor_card">
+            <img src="img/p4.jpeg" class="card-img-top" alt="mentor_img">
+            <div class="card-body">
+              <h5 class="card-title mentor_name">Clarice Du</h5>
+              <a href="mailto:ydu2@andrew.cmu.edu" class="card-text m-0 p-0 mentor_email">ydu2@andrew.cmu.edu</a><br>
+              <!-- bio popup window -->
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-white mt-2 bio_bt" data-bs-toggle="modal" data-bs-target="#model4">
+              Read More
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="model4" tabindex="-1" aria-labelledby="modalLabel4" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel4">Clarice Du</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="row d-flex">
+                          <div class="col-lg-6 col-md-12 col-sm-12">
+                            <img
+                              class="img-fluid"
+                              src="img/p4.jpeg"/>
+                          </div>
+                          <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p>Hi! My name is Clarice and I’m a rising junior in IS and trying to minor in CS and art. This summer, I’m looking forward to interning virtually at Microsoft while (hopefully!) living somewhere new. Apart from school, I love cooking for family and friends, watching my 4 comfort shows on repeat, and exploring new coffee shops and stores.</p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- end -->
+            </div>
+        </div>
+        <!-- row 2 -->
+        <div class="card m-4 mentor_card">
+            <img src="img/p5.jpeg" class="card-img-top" alt="mentor_img">
+            <div class="card-body">
+              <h5 class="card-title mentor_name">Kimberly Gao</h5>
+              <a href="mailto:kwgao@andrew.cmu.edu" class="card-text m-0 p-0 mentor_email">kwgao@andrew.cmu.edu</a><br>
+  
+            <!-- bio window -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-white mt-2 bio_bt" data-bs-toggle="modal" data-bs-target="#model5">
+              Read More
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="model5" tabindex="-1" aria-labelledby="modalLabel5" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel5">Kimberly Gao</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="row d-flex">
+                          <div class="col-lg-6 col-md-12 col-sm-12">
+                            <img
+                              class="img-fluid"
+                              src="img/p5.jpeg"/>
+                          </div>
+                          <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p>Hi, I'm Kimberly and I'm from Houston, TX! I'm a rising sophomore studying Information Systems with an additional major in Computer Science and minor in Human Computer Interaction. In the past, I've worked for Kode With Klossy supporting young women in tech and in Summer 2021, I'll be interning at Capital One. I love getting coffee, trying new restaurants, cooking/baking, & concerts! Feel free to reach out :)</p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- end -->
+            </div>
+          </div>
+        
+          <div class="card m-4 mentor_card">
+              <img src="img/p6.jpeg" class="card-img-top" alt="mentor_img">
+              <div class="card-body">
+                <h5 class="card-title mentor_name">Amita Goyal</h5>
+                <a href="mailto:amitag@andrew.cmu.edu" class="card-text m-0 p-0 mentor_email">amitag@andrew.cmu.edu</a><br>
+            <!-- bio popup window -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-white mt-2 bio_bt" data-bs-toggle="modal" data-bs-target="#model6">
+                Read More
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="model6" tabindex="-1" aria-labelledby="modalLabel6" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalLabel6">Amita Goyal</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row d-flex">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <img
+                                class="img-fluid"
+                                src="img/p6.jpeg"/>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <p>Hi! My name is Amita Goyal and I am a rising sophomore in IS. On campus I am a part of ScottyLabs and in my free time I love to garden, cook, and watch Netflix. I'm super excited to be a mentor and I can't wait to meet everyone in person (hopefully) in the fall :)</p>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- end -->
+              </div>
+          </div>
+  
+          <div class="card m-4 mentor_card">
+              <img src="img/p7.jpeg" class="card-img-top" alt="mentor_img">
+              <div class="card-body">
+                <h5 class="card-title mentor_name">Emma Jiang</h5>
+                <a href="mailto:eyjiang@andrew.cmu.edu" class="card-text m-0 p-0 mentor_email">eyjiang@andrew.cmu.edu</a><br>
+            <!-- bio popup window -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-white mt-2 bio_bt" data-bs-toggle="modal" data-bs-target="#model7">
+                Read More
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="model7" tabindex="-1" aria-labelledby="modalLabel7" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalLabel7">Emma Jiang</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row d-flex">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <img
+                                class="img-fluid"
+                                src="img/p7.jpeg"/>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <p>Hi, I'm Emma, and I come from the California bay area. I am a rising sophomore majoring in Information Systems; I am also pursuing a computer science minor and potentially a game design minor. My favorite pastimes are baking, drawing, and playing video games.</p>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- end -->            
+            </div>
+          </div>
+  
+          <div class="card m-4 mentor_card">
+              <img src="img/p8.jpeg" class="card-img-top" alt="mentor_img">
+              <div class="card-body">
+                <h5 class="card-title mentor_name">Wen Shan Jiang</h5>
+                <a href="mailto:wenshanj@andrew.cmu.edu"  class="card-text m-0 p-0 mentor_email">wenshanj@andrew.cmu.edu
+                </a>
+                <!-- bio popup window -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-white mt-2 bio_bt" data-bs-toggle="modal" data-bs-target="#model8">
+                Read More
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="model8" tabindex="-1" aria-labelledby="modalLabel8" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalLabel8">Wen Shan Jiang</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row d-flex">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <img
+                                class="img-fluid"
+                                src="img/p8.jpeg"/>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <p>Hi my name is Wen Shan! I'm a rising junior, and I'm from Brooklyn, New York. I'm studying Information Systems and Human-Computer Interaction. Outside of school, I love trying out new restaurants, traveling, and baking.</p>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              </div>
+          </div>
+          <button class="btn btn-white collapse_m justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#moreMentors" aria-expanded="false" aria-controls="collapseExample">
+              View More
+          </button>
+          <div class="collapse" id="moreMentors">
+            <!-- more mentors -->
+            <div class="card m-4 mentor_card">
+              <img src="img/p9.jpeg" class="card-img-top" alt="mentor_img">
+              <div class="card-body">
+                <h5 class="card-title mentor_name">Grace Joseph</h5>
+                <a href="mailto:gejoseph@andrew.cmu.edu"  class="card-text m-0 p-0 mentor_email">gejoseph@andrew.cmu.edu</a>
+                <!-- bio popup window -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-white mt-2 bio_bt" data-bs-toggle="modal" data-bs-target="#model9">
+                Read More
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="model9" tabindex="-1" aria-labelledby="modalLabel9" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalLabel9">Grace Joseph</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row d-flex">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <img
+                                class="img-fluid"
+                                src="img/p9.jpeg"/>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <p>Hey, I'm Grace! I'm originally from Portland, OR and I'm currently a junior studying Information Systems and pursuing minors in Computer Science and HCI. Outside of IS, I also serve as a captain and board member for CMU Mock Trial, a layout designer for Big Straw Magazine, a research assistant in the HCI department, and as a UI/UX Designer for a startup called ZUZ. In my free time, I’m usually painting, learning to play the ukulele, experimenting with tofu, or watching vine compilations on youtube :)</p>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              </div>
+          </div>  <!--end-->
+
+          <div class="card m-4 mentor_card">
+              <img src="img/p10.jpeg" class="card-img-top" alt="mentor_img">
+              <div class="card-body">
+                <h5 class="card-title mentor_name">Grace Kim</h5>
+                <a href="mailto:haeunk@andrew.cmu.edu"  class="card-text m-0 p-0 mentor_email">haeunk@andrew.cmu.edu</a>
+                <!-- bio popup window -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-white mt-2 bio_bt" data-bs-toggle="modal" data-bs-target="#model10">
+                Read More
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="model10" tabindex="-1" aria-labelledby="modalLabel10" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalLabel10">Grace Kim</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row d-flex">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <img
+                                class="img-fluid"
+                                src="img/p10.jpeg"/>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <p>Hey there! My name is Grace and I'm a rising senior in IS and incoming accelerated master's student in Software Engineering. I transferred into the program from Tepper in my sophomore year, so if you have any questions about the transfer process or pursuing a business major or minor, please don't hesitate to reach out! This summer, I was a software engineer intern at Affirm and in my free time, I love to cook, picnic with my friends, and read in my hammock. I'm so excited to see you around on campus! :~)</p>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              </div>
+          </div>  <!--end-->
+
+          <div class="card m-4 mentor_card">
+              <img src="img/p11.jpeg" class="card-img-top" alt="mentor_img">
+              <div class="card-body">
+                <h5 class="card-title mentor_name">Ankita Kundu</h5>
+                <a href="mailto:ankitaku@andrew.cmu.edu"  class="card-text m-0 p-0 mentor_email">ankitaku@andrew.cmu.edu</a>
+                <!-- bio popup window -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-white mt-2 bio_bt" data-bs-toggle="modal" data-bs-target="#model11">
+                Read More
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="model11" tabindex="-1" aria-labelledby="modalLabel11" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalLabel11">Ankita Kundu</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row d-flex">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <img
+                                class="img-fluid"
+                                src="img/p11.jpeg"/>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <p>Ankita is a rising senior double majoring in Information Systems and Human-Computer Interaction. She is interested in being a product manager post-graduation and is interested in the intersection of social impact and tech. Outside of academics, she loves exploring the city and traveling, photography, and trying out new food places.</p>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              </div>
+          </div>  <!--end-->
+
+          <div class="card m-4 mentor_card">
+              <img src="img/p12.jpeg" class="card-img-top" alt="mentor_img">
+              <div class="card-body">
+                <h5 class="card-title mentor_name">Nina Li</h5>
+                <a href="mailto:jiatong3@andrew.cmu.edu"  class="card-text m-0 p-0 mentor_email">jiatong3@andrew.cmu.edu</a>
+                <!-- bio popup window -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-white mt-2 bio_bt" data-bs-toggle="modal" data-bs-target="#model12">
+                Read More
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="model12" tabindex="-1" aria-labelledby="modalLabel12" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalLabel12">Nina Li</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row d-flex">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <img
+                                class="img-fluid"
+                                src="img/p12.jpeg"/>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <p>Nina is a sophomore studying Information Systems and pursuing an additional major in business administration. She was born in Beijing, China and immigrated to Toronto, Canada at the age of 10. When she isn't glued to a computer screen, she spends her time dancing to K-pop, going to the gym, reading detective novels, and playing with her ragdoll kitten Ciel.</p>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              </div>
+          </div>  <!--end-->
+
+          </div>
+      </div>
+      
+
+    </div>
+
+
+<!-- advisor tab -->
+      <div
+        class="tab-pane fade"
+        id="advisor"
+        role="tabpanel"
+        aria-labelledby="advisor-tab"
+      >
+      <input type="text" id="search_input2" onkeyup="filter('search_input2','advisor_card','advisor_name')" placeholder=" Search for advisors">
+
+        <div class="container">
+            <div class="card m-4 advisor_card">
+                <img src="img/a1.jpeg" class="card-img-top" alt="advisor_img">
+                <div class="card-body">
+                  <h5 class="card-title advisor_name">Correy Dandoy</h5>
+                  <a href="mailto:correy@cmu.edu"  class="card-text m-0 p-0 mentor_email">correy@cmu.edu</a><br>
+      
+                <!-- bio window -->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-white mt-2 bio_bt" data-bs-toggle="modal" data-bs-target="#modela1">
+                  Read More
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="modela1" tabindex="-1" aria-labelledby="modalLabela1" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabela1">Correy Dandoy</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <div class="row d-flex">
+                              <div class="col-lg-6 col-md-12 col-sm-12">
+                                <img
+                                  class="img-fluid"
+                                  src="img/a1.jpeg"/>
+                              </div>
+                              <div class="col-lg-6 col-md-12 col-sm-12">
+                                <p>Hi, my name's Allison! I transferred into IS at the beginning of my sophomore year, and now I'm trying to do a minor in Machine Learning. In my free time I like watching cat videos, or Inkmaster! Excited to meet all of you :)</p>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- end -->
+                </div>
+              </div>
+            
+              <div class="card m-4 advisor_card">
+                  <img src="img/a2.jpeg" class="card-img-top" alt="advisor_img">
+                  <div class="card-body">
+                    <h5 class="card-title advisor_name">Brandy Wilson</h5>
+                    <a href="mailto:brandyw@andrew.cmu.edu" class="card-text m-0 p-0 mentor_email">brandyw@andrew.cmu.edu</a><br>
+                <!-- bio popup window -->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-white mt-2 bio_bt" data-bs-toggle="modal" data-bs-target="#modela2">
+                    Read More
+                  </button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="modela2" tabindex="-1" aria-labelledby="modalLabela2" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="modalLabela2">Brandy Wilson</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row d-flex">
+                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                  <img
+                                    class="img-fluid"
+                                    src="img/a2.jpeg"/>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                  <p>Hi hi! I'm a rising sophomore and originally from Chino Hills, California. I'm also pursuing minors in Business Analytics and Optimization, Computer Science, and Human Computer Interaction. On campus, I'm involved in the professional fraternity Alpha Kappa Psi and Smart Woman Securities. In my free time I like gaming, watching different Netflix shows, kdramas, and animes, and discovering new music. This summer I will be working as a full-time intern at venture capital JUMP Investors!</p>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> <!-- end -->
+                  </div>
+            </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <footer class="py-2">
+      <div class="row" id="footerContent">
+        <!-- footer logo -->
+        <div class="col-2">
+          <a href="index.html">
+            <img
+              src="img/women in IS logo1.png"
+              width="90%"
+              alt="women in is logo"
+              class="d-inline-block align-middle"
+            />
+          </a>
+        </div>
+        <div class="col-1"></div>
+        <!-- page nav menu -->
+        <div class="col-3">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 pb-2">
+              <a href="index.html" class="nav-link p-0">Home</a>
+            </li>
+            <li class="nav-item mb-2 pb-2">
+              <a href="events.html" class="nav-link p-0">Events</a>
+            </li>
+            <li class="nav-item mb-2 pb-2">
+              <a href="joinUs.html" class="nav-link p-0">Join</a>
+            </li>
+            <li class="nav-item mb-2 pb-2">
+              <a href="meetUs.html" class="nav-link p-0">Meet Us</a>
+            </li>
+            <li class="nav-item mb-2 pb-2">
+              <a href="#" class="nav-link p-0">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- address -->
+        <div class="col-3 address">
+          <h5>Information Systems</h5>
+          <a href="https://goo.gl/maps/vztjvExTPMWMiwR79" target="_blank"
+            ><p class="adress_d">
+              4800 Forbes Ave, HBH 3031 <br />
+              Pittsburgh, PA 15213
+            </p></a
+          >
+          <!-- contact icons -->
+          <ul class="list-unstyled d-flex">
+            <li>
+              <a href="https://goo.gl/maps/1JrfYtKWctKS8QW37" target="_blank"
+                ><img
+                  class="thumbnail contact_icons"
+                  id="map_icon"
+                  src="img/maplogo.png"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+            <li id="mail_icon">
+              <a href="mailto: isinfo@andrew.cmu.edu" target="_blank"
+                ><img
+                  class="thumbnail contact_icons"
+                  src="img/emailLogo.png"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+            <li class="ms-3">
+              <a href="tel:4122683259"
+                ><img
+                  class="thumbnail contact_icons"
+                  src="img/phoneLogo.png"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+            <li class="ms-3">
+              <a href="https://www.instagram.com/cmu_is/" target="_blank"
+                ><img
+                  class="thumbnail contact_icons"
+                  src="img/igLogo.png"
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <!-- resources -->
+        <div class="col-3 resources">
+          <h5>Resources</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="pdfs/MenteeResource.pdf" target="_blank" class="nav-link p-0">Mentee Guidebook</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="pdfs/MentorResource.pdf" target="_blank" class="nav-link p-0">Mentor Guidebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
